@@ -23,6 +23,7 @@ body {
     display: inline-block;
     position: relative;
     animation: circle 10.5s linear infinite;
+    box-shadow: 3px 3px 3px #642ba0, -3px 3px 3px #ad1283;
 }
 
 .circle p{
@@ -40,12 +41,14 @@ body {
     background-color: rgba(245, 240, 240, 0.5);
     text-align: center;
     font-family: dosis;
+    text-shadow: 2px 2px 2px #642ba0;
 }
 
 .mainContainer h2 {
     background-color: rgba(245, 240, 240, 0.5);
     text-align: center;
     font-family: dosis;
+    text-shadow: 2px 2px 2px #642ba0;
 }
 
 .productContainer {
@@ -67,6 +70,7 @@ body {
     border: solid 3px black;
     border-radius: 5px;
     background-color: #DED3D3;
+    box-shadow: 10px 5px 5px black;
 }
 
 .imageContainer img {
@@ -96,6 +100,7 @@ button {
     cursor: pointer;
     color: whitesmoke;
     transition: 0.5s;
+    box-shadow: 10px 5px 5px black;
 }
 
 button:hover {
@@ -114,7 +119,8 @@ button:hover {
 }
 
 .footerContent p{
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .socials ul {
@@ -162,5 +168,65 @@ button:hover {
 
     100% {
         left: 600px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 576px){
+    .productContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         text-align: center;
+    }
+
+    .imageContainer{
+        margin-top: 50px;
+        margin-bottom: 100px;
+    }
+
+    .descripcion{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    button{
+        height: 15%;
+        margin-bottom: 10%;
+    }
+}
+
+@media (min-width: 576px)and (max-width: 750px){
+    .productContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         text-align: center;
+    }
+
+    .imageContainer{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .descripcion{
+        text-align: center;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 906px){
+    .productContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         text-align: center;
+    }
+
+    .imageContainer{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .descripcion{
+        text-align: center;
     }
 }
