@@ -1,6 +1,6 @@
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -14,38 +14,43 @@ body {
     font-family: dosis;
 }
 
-header h1{
+header {
     background-color: rgba(245, 240, 240, 0.5);
+}
+
+header h1 {
     text-align: center;
     text-shadow: 2px 2px 2px #642ba0;
+    margin-bottom: 15px;
 }
 
 .navegacion {
     display: flex;
     justify-content: center;
-    background-color: rgba(245, 240, 240, 0.5);
 }
 
-.navegacion ul{
+.navegacion ul {
     display: flex;
     justify-content: space-around;
     padding: 10px;
     text-align: center;
-    
+
 }
 
-.navegacion ul li{
+.navegacion ul li {
     list-style-type: none;
     margin-left: 25px;
+    margin-bottom: 20px;
 }
 
-.navegacion ul li a{
+.navegacion a {
     text-decoration: none;
     color: black;
     transition: 0.5s;
     border: solid 2px black;
     padding: 5px;
     border-radius: 5px;
+    font-size: 25px;
     background-color: #357eae;
 }
 
@@ -56,54 +61,29 @@ header h1{
 
 }
 
-.circle {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: white;
-    border: solid 2px black;
-    display: inline-block;
-    position: relative;
-    animation: circle 10.5s linear infinite;
-    box-shadow: 3px 3px 3px #642ba0, -3px 3px 3px #ad1283;
-}
-
-.circle p{
-    color: black;
-    margin-top: 10px;
-    font-size: 11px;
-}
-
 .mainContainer {
     display: flex;
     flex-direction: column;
 }
 
-
-.mainContainer h2 {
-    background-color: rgba(245, 240, 240, 0.5);
-    text-align: center;
-    text-shadow: 2px 2px 2px #642ba0;
-}
-
 .productContainer {
     display: flex;
-    justify-content: space-around;
     margin: 5% auto 15% auto;
-    padding: 2% 3% 20% 3%;
+    padding: 2% 3% 5% 3%;
     width: 90%;
     height: 90%;
     border-radius: 5px;
-    text-align: center;
     background-color: #969696;
     border: solid 3px black;
+    gap: 20px;
 }
 
 .imageContainer {
+    display: flex;
+    justify-content: left;
     padding: 10px;
-    margin: 10px;
-    width: 250px;
-    height: 250px;
+    width: 450px;
+    height: 450px;
     border: solid 3px black;
     border-radius: 5px;
     background-color: #DED3D3;
@@ -117,37 +97,62 @@ header h1{
     border-radius: 5px;
 }
 
+.descripctionWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: flex-start;
+}
+
 .descripcion {
-    margin-top: 8%;
-    margin-bottom: 6%;
-    text-align: center;
-    background-color: #969696;
-    width: fit-content;
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0;
 }
 
-
-.descripcion1 {
-    margin-bottom: 2%;
-    width: fit-content;
-    text-align: left;
-    border-radius: 5px;
-}
-
-.descripcion h3{
+.descripcion h1 {
     background-color: rgba(245, 240, 240, 0.5);
-    text-align: center;
+    text-align: left;
+    margin-left: 50px;
     text-shadow: 2px 2px 2px #642ba0;
     border-radius: 5px;
-    padding: 5%;
+    font-size: 70px;
+}
+
+.descripcion1 {
+    background-color: rgba(245, 240, 240, 0.5);
+    text-align: left;
+    font-size: 25px;
+    width: fit-content;
+    border-radius: 5px;
+    margin-top: 120px;
+    margin-left: 50px;
+    padding-right: 3px;
+}
+
+.descripcion1 h2 {
+    background-color: rgba(245, 240, 240, 0.5);
+    text-shadow: 2px 2px 2px #642ba0;
+    padding-left: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.list ul {
+    list-style-position: inside;
+    padding-left: 10px;
 }
 
 button {
-    width: 50%;
-    height: 25%;
-    margin-top: 5px;
+    width: 250px;
+    height: 60px;
+    margin-top: 300px;
+    margin-left: 50px;
     background-color: #ad1283;
     border: solid 3px black;
     font-family: dosis;
+    word-spacing: 4px;
+    text-align: center;
     font-size: 20px;
     border-radius: 5px;
     cursor: pointer;
@@ -162,12 +167,15 @@ button:hover {
     transition: 0.5s;
 }
 
-button:active{
+button:active {
     color: black;
     background-color: whitesmoke;
     transform: translateY(40px);
 }
 
+button i {
+    margin-right: 25px;
+}
 
 .footerContent {
     color: whitesmoke;
@@ -176,7 +184,7 @@ button:active{
     background-color: darkslategrey;
 }
 
-.footerContent p{
+.footerContent p {
     margin-bottom: 5px;
     margin-top: 10px;
 }
@@ -193,6 +201,24 @@ button:active{
 .socials a {
     text-decoration: none;
     color: whitesmoke;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid 2px black;
+    display: inline-block;
+    position: relative;
+    animation: circle 10.5s linear infinite;
+    box-shadow: 3px 3px 3px #642ba0, -3px 3px 3px #ad1283;
+}
+
+.circle p {
+    color: black;
+    margin-top: 10px;
+    font-size: 11px;
 }
 
 #instagram {
@@ -216,8 +242,8 @@ button:active{
 }
 
 @keyframes circle {
-    0%{
-       left: -600px; 
+    0% {
+        left: -600px;
     }
 
     50% {
@@ -235,17 +261,25 @@ button:active{
         flex-direction: column;
         justify-content: center;
          text-align: center;
-         padding: 3% 3% 15% 3%;
+         padding: 3% 15% 29% 3%;
     }
 
     .imageContainer{
-        margin-top: 15%;
-        margin-bottom: 100px;
+        width: 150px;
+        height: 150px;
+    }
+    .imageContainer img{
+        width: 100%;
+        height: 100%;
     }
 
-    .descripcion{
+    .descripcion h1{
         text-align: center;
         margin-top: 20px;
+    }
+
+    .descripcion1 h2{
+        text-align: center;
     }
 }
 
@@ -255,101 +289,255 @@ button:active{
         flex-direction: column;
         justify-content: center;
          text-align: center;
-         padding: 3% 3% 29% 3%;
+         padding: 3% 15% 29% 3%;
     }
 
     .imageContainer{
-        margin-top: 20%;
-        margin-bottom: 50%;
+        width: 350px;
+        height: 350px;
     }
 
-    .descripcion{
+    .descripcionWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .descripcion h1{
         text-align: center;
         margin-top: 20px;
     }
+
+    .descripcion1 h2{
+        text-align: center;
+    }
+
+    .list li{
+        margin-bottom: 5px;
+    }
+
+    button{
+        margin-top: 10px;
+        font-size: 30px;
+        height: 100px;
+        padding-bottom: 17px;
+    }
 }
 
-@media (min-width: 576px)and (max-width: 750px){
+@media (min-width: 550px) and (max-width: 600px){
     .productContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
          text-align: center;
-         padding: 3% 3% 50% 3%;
+         padding: 3% 20% 29% 3%;
     }
 
     .imageContainer{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        width: 350px;
+        height: 350px;
+        margin-left: 60px;
     }
 
-    .descripcion{
+    .descripcionWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .descripcion h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .descripcion1 h2{
         text-align: center;
     }
 
+    .list li{
+        margin-bottom: 5px;
+    }
+
     button{
-        margin-bottom: 10%;
+        margin-top: 10px;
+        font-size: 30px;
+        height: 100px;
+        padding-bottom: 17px;
+        margin-left: 100px;
     }
 }
 
-@media (min-width: 750px) and (max-width: 906px){
+@media (min-width: 601px) and (max-width: 625px) {
     .productContainer{
         display: flex;
         flex-direction: column;
         justify-content: center;
          text-align: center;
-         padding: 3% 3% 50% 3%;
+         padding: 3% 20% 29% 3%;
     }
 
     .imageContainer{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        width: 350px;
+        height: 350px;
+        margin-left: 60px;
     }
 
-    .descripcion{
+    .descripcionWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .descripcion h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .descripcion1 h2{
         text-align: center;
     }
 
+    .list li{
+        margin-bottom: 5px;
+    }
+
+    button{
+        margin-top: 10px;
+        font-size: 30px;
+        height: 100px;
+        padding-bottom: 17px;
+        margin-left: 120px;
+    }
+}
+@media (min-width: 626px) and (max-width: 700px) {
+    .productContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+         text-align: center;
+         padding: 3% 20% 29% 3%;
+    }
+
+    .imageContainer{
+        width: 350px;
+        height: 350px;
+        margin-left: 80px;
+    }
+
+    .descripcionWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .descripcion h1{
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .descripcion1 h2{
+        text-align: center;
+    }
+
+    .list li{
+        margin-bottom: 5px;
+    }
+
+    button{
+        margin-top: 10px;
+        font-size: 30px;
+        height: 100px;
+        padding-bottom: 17px;
+        margin-left: 150px;
+    }
 }
 
-@media (min-width: 906px) and (max-width: 1300px){
+@media (min-width: 601px) and (max-width: 625px) {
     .productContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
          text-align: center;
-         padding: 3% 3% 50% 3%;
+         padding: 3% 20% 29% 3%;
     }
 
     .imageContainer{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        width: 350px;
+        height: 350px;
+        margin-left: 60px;
     }
 
-    .descripcion{
+    .descripcionWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .descripcion h1{
         text-align: center;
-        margin-top: 20%;
+        margin-top: 20px;
+    }
+
+    .descripcion1 h2{
+        text-align: center;
+    }
+
+    .list li{
+        margin-bottom: 5px;
     }
 
     button{
-        width: 65%;
+        margin-top: 10px;
+        font-size: 30px;
+        height: 100px;
+        padding-bottom: 17px;
+        margin-left: 120px;
     }
-
-    @media (min-width: 1367px) and (max-width: 1400px){
-         .productContainer{
+}
+@media (min-width: 701px) and (max-width: 900px) {
+    .productContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
          text-align: center;
-         padding: 3% 3% 70% 3%;
+         padding: 3% 20% 29% 3%;
     }
 
     .imageContainer{
-        margin-top: 100px;
-        margin-bottom: 100px;
+        width: 350px;
+        height: 350px;
+        margin-left: 80px;
     }
 
-    .descripcion{
+    .descripcionWrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 60px;
+    }
+
+    .descripcion h1{
         text-align: center;
-        margin-top: 20%;
+        margin-top: 20px;
+    }
+
+    .descripcion1 h2{
+        text-align: center;
+    }
+
+    .list li{
+        margin-bottom: 5px;
     }
 
     button{
-        width: 65%;
-    }
+        margin-top: 10px;
+        font-size: 30px;
+        height: 100px;
+        padding-bottom: 17px;
+        margin-left: 150px;
     }
 }
