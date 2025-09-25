@@ -11,6 +11,7 @@
 
 body {
     background: linear-gradient(to bottom, #cb60b3 0%, #ad1283 50%, #4038af 100%);
+    font-family: dosis;
 }
 
 
@@ -40,14 +41,12 @@ body {
 .mainContainer h1{
     background-color: rgba(245, 240, 240, 0.5);
     text-align: center;
-    font-family: dosis;
     text-shadow: 2px 2px 2px #642ba0;
 }
 
 .mainContainer h2 {
     background-color: rgba(245, 240, 240, 0.5);
     text-align: center;
-    font-family: dosis;
     text-shadow: 2px 2px 2px #642ba0;
 }
 
@@ -55,11 +54,11 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 5% auto 15% auto;
-    padding: 90px;
+    padding: 2% 3% 14% 3%;
     width: 90%;
+    height: 90%;
     border-radius: 5px;
     text-align: center;
-    font-family: dosis;
     background-color: #969696;
     border: solid 3px black;
 }
@@ -82,10 +81,19 @@ body {
 
 .descripcion {
     margin-top: 6%;
+    margin-bottom: 6%;
     text-align: center;
-    font-family: dosis;
     background-color: #969696;
     width: fit-content;
+    text-decoration: underline;
+}
+
+.descripcion1 {
+    margin-bottom: 2%;
+    width: fit-content;
+    text-align: center;
+    border: solid 2px black;
+    border-radius: 5px;
 }
 
 button {
@@ -111,7 +119,6 @@ button:hover {
 
 
 .footerContent {
-    font-family: dosis;
     color: whitesmoke;
     text-align: center;
     padding: 20px;
