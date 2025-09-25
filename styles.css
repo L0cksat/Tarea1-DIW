@@ -14,6 +14,47 @@ body {
     font-family: dosis;
 }
 
+header h1{
+    background-color: rgba(245, 240, 240, 0.5);
+    text-align: center;
+    text-shadow: 2px 2px 2px #642ba0;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(245, 240, 240, 0.5);
+}
+
+.navegacion ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.navegacion ul li{
+    list-style-type: none;
+    margin-left: 25px;
+}
+
+.navegacion ul li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+    border: solid 2px black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #357eae;
+}
+
+.navegacion a:hover {
+    color: #ad1283;
+    transition: 0.5s;
+    background-color: #642ba0;
+
+}
 
 .circle {
     height: 50px;
@@ -38,11 +79,6 @@ body {
     flex-direction: column;
 }
 
-.mainContainer h1{
-    background-color: rgba(245, 240, 240, 0.5);
-    text-align: center;
-    text-shadow: 2px 2px 2px #642ba0;
-}
 
 .mainContainer h2 {
     background-color: rgba(245, 240, 240, 0.5);
@@ -54,7 +90,7 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 5% auto 15% auto;
-    padding: 2% 3% 14% 3%;
+    padding: 2% 3% 20% 3%;
     width: 90%;
     height: 90%;
     border-radius: 5px;
@@ -66,6 +102,8 @@ body {
 .imageContainer {
     padding: 10px;
     margin: 10px;
+    width: 250px;
+    height: 250px;
     border: solid 3px black;
     border-radius: 5px;
     background-color: #DED3D3;
@@ -80,25 +118,32 @@ body {
 }
 
 .descripcion {
-    margin-top: 6%;
+    margin-top: 8%;
     margin-bottom: 6%;
     text-align: center;
     background-color: #969696;
     width: fit-content;
-    text-decoration: underline;
 }
+
 
 .descripcion1 {
     margin-bottom: 2%;
     width: fit-content;
-    text-align: center;
-    border: solid 2px black;
+    text-align: left;
     border-radius: 5px;
+}
+
+.descripcion h3{
+    background-color: rgba(245, 240, 240, 0.5);
+    text-align: center;
+    text-shadow: 2px 2px 2px #642ba0;
+    border-radius: 5px;
+    padding: 5%;
 }
 
 button {
     width: 50%;
-    height: 8%;
+    height: 25%;
     margin-top: 5px;
     background-color: #ad1283;
     border: solid 3px black;
@@ -115,6 +160,12 @@ button:hover {
     color: black;
     background-color: whitesmoke;
     transition: 0.5s;
+}
+
+button:active{
+    color: black;
+    background-color: whitesmoke;
+    transform: translateY(40px);
 }
 
 
@@ -184,21 +235,17 @@ button:hover {
         flex-direction: column;
         justify-content: center;
          text-align: center;
+         padding: 3% 3% 15% 3%;
     }
 
     .imageContainer{
-        margin-top: 50px;
+        margin-top: 15%;
         margin-bottom: 100px;
     }
 
     .descripcion{
         text-align: center;
         margin-top: 20px;
-    }
-
-    button{
-        height: 15%;
-        margin-bottom: 10%;
     }
 }
 
@@ -208,21 +255,17 @@ button:hover {
         flex-direction: column;
         justify-content: center;
          text-align: center;
+         padding: 3% 3% 29% 3%;
     }
 
     .imageContainer{
-        margin-top: 50px;
-        margin-bottom: 100px;
+        margin-top: 20%;
+        margin-bottom: 50%;
     }
 
     .descripcion{
         text-align: center;
         margin-top: 20px;
-    }
-
-    button{
-        height: 15%;
-        margin-bottom: 10%;
     }
 }
 
@@ -232,6 +275,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
          text-align: center;
+         padding: 3% 3% 50% 3%;
     }
 
     .imageContainer{
@@ -241,6 +285,10 @@ button:hover {
 
     .descripcion{
         text-align: center;
+    }
+
+    button{
+        margin-bottom: 10%;
     }
 }
 
@@ -250,6 +298,7 @@ button:hover {
         flex-direction: column;
         justify-content: center;
          text-align: center;
+         padding: 3% 3% 50% 3%;
     }
 
     .imageContainer{
@@ -259,5 +308,48 @@ button:hover {
 
     .descripcion{
         text-align: center;
+    }
+
+}
+
+@media (min-width: 906px) and (max-width: 1300px){
+    .productContainer{
+         text-align: center;
+         padding: 3% 3% 50% 3%;
+    }
+
+    .imageContainer{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .descripcion{
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    button{
+        width: 65%;
+    }
+
+    @media (min-width: 1367px) and (max-width: 1400px){
+         .productContainer{
+         text-align: center;
+         padding: 3% 3% 70% 3%;
+    }
+
+    .imageContainer{
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    .descripcion{
+        text-align: center;
+        margin-top: 20%;
+    }
+
+    button{
+        width: 65%;
+    }
     }
 }
